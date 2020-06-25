@@ -3,7 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js">
     <title>Sanatan portfolio</title>
   </head>
   <body>
@@ -141,9 +153,19 @@
     <div class="container work" id="work">
       <h1>Work</h1>
       <div class="work-category">
-        <button id="designing" class="active">Web Developing</button>
-        <button id="animation">animation</button>
-        <button id="projects">react projects</button>
+        <button
+          id="designing"
+          class="active"
+          onclick="showRequiredCategory(this)"
+        >
+          Web Developing
+        </button>
+        <button id="animation" onclick="showRequiredCategory(this)">
+          animation
+        </button>
+        <button id="projects" onclick="showRequiredCategory(this)">
+          react projects
+        </button>
       </div>
       <div class="category-designing showCategory">
         <a href=""><img src="" /></a>
@@ -153,7 +175,7 @@
         <a href=""><img src="" /></a>
         <a href=""><img src="" /></a>
       </div>
-      <div class="category-designing hideCategory">
+      <div class="category-animation hideCategory">
         <a href=""><img src="" /></a>
         <a href=""><img src="" /></a>
         <a href=""><img src="" /></a>
@@ -161,7 +183,7 @@
         <a href=""><img src="" /></a>
         <a href=""><img src="" /></a>
       </div>
-      <div class="category-designing hideCategory">
+      <div class="category-project hideCategory">
         <a href=""><img src="" /></a>
         <a href=""><img src="" /></a>
         <a href=""><img src="" /></a>
@@ -172,18 +194,25 @@
     </div>
 
     <div class="container contact" id="contact">
-        <h1>Contact</h1>
-        <form>
-            <input type="text" name="name" placeholder="Full Name">
-            <input type="email" placeholder="Email">
-            <input type="email" placeholder="PortfolioPersonemail@email.com">
-            <textarea name="message" cols="30" rows="10" placeholder="message"></textarea>
-            <input type="submit">
-        </form>
+      <h1>Contact</h1>
+      <form>
+        <input type="text" name="name" placeholder="Full Name" />
+        <input type="email" placeholder="Email" />
+        <input type="email" placeholder="PortfolioPersonemail@email.com" />
+        <textarea
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder="message"
+        ></textarea>
+        <input type="submit" />
+      </form>
     </div>
     <footer>
-        <hr>
-        <p>2020 Copyright. All Rights Reserved</p>
+      <hr />
+      <p>2020 Copyright. All Rights Reserved</p>
     </footer>
+
+    <script src="app.js"></script>
   </body>
 </html>
